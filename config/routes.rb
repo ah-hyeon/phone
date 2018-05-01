@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'home/list'
+  get 'home/list' =>'home#list'
 
-  get 'home/add'
+  get 'home/add'=> 'home#add'
 
-  get 'home/add_process'
+  post 'home/add_process' => 'home#add_process'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
